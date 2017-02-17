@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    ["fast-async", {
+      "compiler": {
+        "promises": true,
+        "generators": false
+      },
+      "useRuntimeModule": true
+    }]
+  ],
+  "presets": [
+    "stage-0",
+    ["env", {
+      "exclude": [
+        "transform-regenerator", "transform-async-to-generator"
+      ],
+      "useBuiltIns": true,
+      "targets": {
+        "node": 4.3
+      }
+    }]
+  ]
+}
